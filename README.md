@@ -1,1 +1,1 @@
-# FoundationsAIMB_Mini-Project_Segmentation-
+# FoundationsAIMB_Mini-Project_Segmentation
