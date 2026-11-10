@@ -12,3 +12,5 @@ venv/
 
 # macOS metadata
 .DS_Store
+# IDE settings
+.idea/
