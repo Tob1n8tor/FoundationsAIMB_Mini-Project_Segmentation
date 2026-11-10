@@ -1,0 +1,4 @@
+Model,Feature Size,Params (M),SSL Pre-trained,Paper Dice (overlap=0.5) [%],Reproduced Dice (overlap=0.5) [%],Difference [%]
+Swin UNETR / Tiny,12,4.0,False,70.35,66.31,-4.04
+Swin UNETR / Small,24,15.7,False,79.34,77.89,-1.45
+Swin UNETR / Base,48,62.1,True,81.86,81.37,-0.49

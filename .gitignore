@@ -1,0 +1,14 @@
+# Large medical image datasets & model weights
+data/
+checkpoints/
+results/predictions/
+
+# Python & Jupyter artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# macOS metadata
+.DS_Store
