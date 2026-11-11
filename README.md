@@ -43,6 +43,8 @@ results/     metrics/ (CSV results), figures/ (plots), predictions/ (git-ignored
 
 ## Setup
 
+Tested with Python 3.14.
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
@@ -71,7 +73,8 @@ jupyter notebook notebooks/02_btcv_inference.ipynb
 
 On CPU this takes about 1.5 hours in total. Predicted masks are saved to `results/predictions/`.
 
-**Run Task 3:** needs the Task 2 predictions (run Task 2 first, or get the `results/predictions/` folder from a teammate).
+**Run Task 3:** needs the BTCV data (see above), `data/btcv/dataset_0.json` (downloaded by the Task 2 notebook)
+and the Task 2 predictions (run Task 2 first, or get the `results/predictions/` folder from a teammate).
 
 ```bash
 jupyter notebook notebooks/03_quantitative_eval.ipynb
