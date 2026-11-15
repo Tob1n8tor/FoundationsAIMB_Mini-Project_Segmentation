@@ -12,5 +12,9 @@ venv/
 
 # macOS metadata
 .DS_Store
+
+# 3D Slicer artifacts
+3dslicer/
+
 # IDE settings
 .idea/
