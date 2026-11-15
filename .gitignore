@@ -15,3 +15,6 @@ venv/
 
 # 3D Slicer artifacts
 3dslicer/
+
+# IDE settings
+.idea/
