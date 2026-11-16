@@ -1,4 +1,4 @@
-# Task 3 – Notes for the report (initial draft)
+# Task 3 – Notes for the report
 
 > **Task:** For each evaluated model, compute Dice score, Hausdorff distance and organ-wise performance.
 > Report both the overall performance and the performance for individual organs.
@@ -8,12 +8,15 @@
 - **Dice**: how much the prediction overlaps the true organ (1 = perfect, 0 = no overlap).
 - **HD**: the largest distance between the predicted and true outline, in mm (lower = better).
 - **HD95**: like HD, but ignores the worst 5% of points, so one stray voxel matters less. Standard in papers.
-- Organ missing from the scan (only the gallbladder in img0035): Dice counts as 0, like the official
-  code, so we stay comparable with the paper. HD can't be computed, so it is left out of the HD averages.
+  But if there are many stray fragments (more than 5% of the surface points), HD95 is affected too.
+- Organ missing from the scan (only the gallbladder in img0035): Dice counts as 0 in the overall mean, like the
+  official code, so we stay comparable with the official results. In the organ-wise table we only average scans
+  where the organ exists (gallbladder: 5 scans), otherwise the gallbladder Dice would drop from 0.77 to 0.64 just
+  because of this one scan. HD can't be computed, so it is left out of the HD averages.
 
 ## Overall results
 
-| Model | Dice [%] | Paper Dice [%] | HD95 median [mm] | HD95 mean [mm] | HD mean [mm] | Missed organs (of 78) |
+| Model | Dice [%] | Official Dice (README) [%] | HD95 median [mm] | HD95 mean [mm] | HD mean [mm] | Missed organs (of 78) |
 |---|---|---|---|---|---|---|
 | Tiny | 66.31 | 70.35 | 26.4 | 104.7 | 252.8 | 6 |
 | Small | 77.89 | 79.34 | 12.4 | 111.9 | 273.4 | 0 |
@@ -47,7 +50,7 @@ All 3 models: `results/metrics/task3_organwise_overlap0.5.csv` and `results/figu
 ## Discussion
 
 ### Which model configuration performs best overall?
-**Base.** It has the highest Dice (81.37%, only 0.5 points below the paper) and the lowest HD95 (6.4 mm median).
+**Base.** It has the highest Dice (81.37%, only 0.5 points below the official result) and the lowest HD95 (6.4 mm median).
 The bigger the model, the better: Tiny < Small < Base. Tiny also misses organs completely
 (the right adrenal gland in all 6 scans), while Small and Base find every organ.
 
@@ -63,7 +66,9 @@ bigger: 0.00 to 0.92. Large organs score high with every model. Small organs dep
   have low contrast to nearby tissue, and their shape varies a lot between patients.
 
 ### Do Dice score and Hausdorff distance lead to the same conclusions?
-**Across models, yes.** Both rank Base > Small > Tiny.
+**Across models, mostly.** Dice and the median HD95 both rank Base > Small > Tiny. The mean HD95, however,
+ranks Small (111.9 mm) below Tiny (104.7 mm), because Small produces more far-away fragments. The mean is
+dominated by a few extreme values, so we use the median for the ranking.
 **Per organ, not always.** The liver has the best Dice (0.96) but one of the worst HD95 values (124 mm).
 The kidneys have similar Dice but an HD95 of only about 3–4 mm.
 - Reason: the models sometimes predict small **false spots far away from the organ**. Such a spot is tiny,
@@ -80,5 +85,7 @@ The kidneys have similar Dice but an HD95 of only about 3–4 mm.
 
 - **Good case:** most organs are segmented well (HD95 median 7.4 mm). The HD95 mean is still high because
   of a few organs with far-away false spots, so the mean alone looks worse than the case really is.
-- **Bad case:** low Dice, and even the median HD95 is over 200 mm, so most organs have large outline errors.
-  Tiny also misses the right adrenal gland completely here.
+- **Bad case:** low Dice, and even the median HD95 is over 200 mm. This is not because the organ outlines are
+  20 cm off: Tiny predicts many scattered fragments far from the organs (e.g. "liver" on pelvic muscles,
+  "stomach" in the air outside the body, see Task 4). Each fragment adds surface points far from the reference,
+  which drives HD95 up. Tiny also misses the right adrenal gland completely here.
