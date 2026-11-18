@@ -1,0 +1,1418 @@
+case,organ,scan_z_mm,truncated
+s0013,Spleen,451.5,False
+s0013,Right Kidney,451.5,False
+s0013,Left Kidney,451.5,False
+s0013,Gallbladder,451.5,False
+s0013,Esophagus,451.5,True
+s0013,Liver,451.5,False
+s0013,Stomach,451.5,False
+s0013,Aorta,451.5,True
+s0013,Inferior Vena Cava,451.5,True
+s0013,Portal and Splenic Veins,451.5,False
+s0013,Pancreas,451.5,False
+s0013,Right Adrenal Gland,451.5,False
+s0013,Left Adrenal Gland,451.5,False
+s0029,Spleen,633.0,False
+s0029,Right Kidney,633.0,False
+s0029,Left Kidney,633.0,False
+s0029,Gallbladder,633.0,False
+s0029,Esophagus,633.0,False
+s0029,Liver,633.0,False
+s0029,Stomach,633.0,False
+s0029,Aorta,633.0,False
+s0029,Inferior Vena Cava,633.0,False
+s0029,Portal and Splenic Veins,633.0,False
+s0029,Pancreas,633.0,False
+s0029,Right Adrenal Gland,633.0,False
+s0029,Left Adrenal Gland,633.0,False
+s0038,Spleen,499.5,False
+s0038,Right Kidney,499.5,False
+s0038,Left Kidney,499.5,False
+s0038,Gallbladder,499.5,False
+s0038,Esophagus,499.5,True
+s0038,Liver,499.5,False
+s0038,Stomach,499.5,False
+s0038,Aorta,499.5,True
+s0038,Inferior Vena Cava,499.5,True
+s0038,Portal and Splenic Veins,499.5,False
+s0038,Pancreas,499.5,False
+s0038,Right Adrenal Gland,499.5,False
+s0038,Left Adrenal Gland,499.5,False
+s0040,Spleen,631.5,False
+s0040,Right Kidney,631.5,False
+s0040,Left Kidney,631.5,False
+s0040,Gallbladder,631.5,False
+s0040,Esophagus,631.5,False
+s0040,Liver,631.5,False
+s0040,Stomach,631.5,False
+s0040,Aorta,631.5,False
+s0040,Inferior Vena Cava,631.5,False
+s0040,Portal and Splenic Veins,631.5,False
+s0040,Pancreas,631.5,False
+s0040,Right Adrenal Gland,631.5,False
+s0040,Left Adrenal Gland,631.5,False
+s0119,Spleen,514.5,False
+s0119,Right Kidney,514.5,False
+s0119,Left Kidney,514.5,False
+s0119,Gallbladder,514.5,False
+s0119,Esophagus,514.5,True
+s0119,Liver,514.5,False
+s0119,Stomach,514.5,False
+s0119,Aorta,514.5,True
+s0119,Inferior Vena Cava,514.5,False
+s0119,Portal and Splenic Veins,514.5,False
+s0119,Pancreas,514.5,False
+s0119,Right Adrenal Gland,514.5,False
+s0119,Left Adrenal Gland,514.5,False
+s0230,Spleen,325.5,True
+s0230,Right Kidney,325.5,False
+s0230,Left Kidney,325.5,True
+s0230,Gallbladder,325.5,False
+s0230,Esophagus,325.5,False
+s0230,Liver,325.5,True
+s0230,Stomach,325.5,True
+s0230,Aorta,325.5,True
+s0230,Inferior Vena Cava,325.5,False
+s0230,Portal and Splenic Veins,325.5,True
+s0230,Pancreas,325.5,True
+s0230,Right Adrenal Gland,325.5,True
+s0230,Left Adrenal Gland,325.5,True
+s0235,Spleen,367.5,False
+s0235,Right Kidney,367.5,False
+s0235,Left Kidney,367.5,False
+s0235,Gallbladder,367.5,False
+s0235,Esophagus,367.5,False
+s0235,Liver,367.5,False
+s0235,Stomach,367.5,False
+s0235,Aorta,367.5,False
+s0235,Inferior Vena Cava,367.5,False
+s0235,Portal and Splenic Veins,367.5,False
+s0235,Pancreas,367.5,False
+s0235,Right Adrenal Gland,367.5,False
+s0235,Left Adrenal Gland,367.5,False
+s0236,Spleen,462.0,False
+s0236,Right Kidney,462.0,False
+s0236,Left Kidney,462.0,False
+s0236,Gallbladder,462.0,False
+s0236,Esophagus,462.0,True
+s0236,Liver,462.0,False
+s0236,Stomach,462.0,False
+s0236,Aorta,462.0,False
+s0236,Inferior Vena Cava,462.0,False
+s0236,Portal and Splenic Veins,462.0,False
+s0236,Pancreas,462.0,False
+s0236,Right Adrenal Gland,462.0,False
+s0236,Left Adrenal Gland,462.0,False
+s0244,Spleen,430.5,False
+s0244,Right Kidney,430.5,False
+s0244,Left Kidney,430.5,False
+s0244,Gallbladder,430.5,False
+s0244,Esophagus,430.5,True
+s0244,Liver,430.5,False
+s0244,Stomach,430.5,False
+s0244,Aorta,430.5,True
+s0244,Inferior Vena Cava,430.5,True
+s0244,Portal and Splenic Veins,430.5,False
+s0244,Pancreas,430.5,False
+s0244,Right Adrenal Gland,430.5,False
+s0244,Left Adrenal Gland,430.5,False
+s0291,Spleen,376.5,False
+s0291,Right Kidney,376.5,False
+s0291,Left Kidney,376.5,False
+s0291,Gallbladder,376.5,False
+s0291,Esophagus,376.5,False
+s0291,Liver,376.5,False
+s0291,Stomach,376.5,False
+s0291,Aorta,376.5,False
+s0291,Inferior Vena Cava,376.5,False
+s0291,Portal and Splenic Veins,376.5,False
+s0291,Pancreas,376.5,False
+s0291,Right Adrenal Gland,376.5,False
+s0291,Left Adrenal Gland,376.5,False
+s0295,Spleen,182.99998545646667,False
+s0295,Right Kidney,182.99998545646667,False
+s0295,Left Kidney,182.99998545646667,False
+s0295,Gallbladder,182.99998545646667,False
+s0295,Esophagus,182.99998545646667,True
+s0295,Liver,182.99998545646667,False
+s0295,Stomach,182.99998545646667,False
+s0295,Aorta,182.99998545646667,False
+s0295,Inferior Vena Cava,182.99998545646667,False
+s0295,Portal and Splenic Veins,182.99998545646667,False
+s0295,Pancreas,182.99998545646667,False
+s0295,Right Adrenal Gland,182.99998545646667,False
+s0295,Left Adrenal Gland,182.99998545646667,False
+s0308,Spleen,586.5,False
+s0308,Right Kidney,586.5,False
+s0308,Left Kidney,586.5,False
+s0308,Gallbladder,586.5,False
+s0308,Esophagus,586.5,False
+s0308,Liver,586.5,False
+s0308,Stomach,586.5,False
+s0308,Aorta,586.5,False
+s0308,Inferior Vena Cava,586.5,False
+s0308,Portal and Splenic Veins,586.5,False
+s0308,Pancreas,586.5,False
+s0308,Right Adrenal Gland,586.5,False
+s0308,Left Adrenal Gland,586.5,False
+s0311,Spleen,438.0,False
+s0311,Right Kidney,438.0,False
+s0311,Left Kidney,438.0,False
+s0311,Gallbladder,438.0,False
+s0311,Esophagus,438.0,False
+s0311,Liver,438.0,False
+s0311,Stomach,438.0,False
+s0311,Aorta,438.0,False
+s0311,Inferior Vena Cava,438.0,False
+s0311,Portal and Splenic Veins,438.0,False
+s0311,Pancreas,438.0,False
+s0311,Right Adrenal Gland,438.0,False
+s0311,Left Adrenal Gland,438.0,False
+s0423,Spleen,661.5,False
+s0423,Right Kidney,661.5,False
+s0423,Left Kidney,661.5,False
+s0423,Gallbladder,661.5,False
+s0423,Esophagus,661.5,False
+s0423,Liver,661.5,False
+s0423,Stomach,661.5,False
+s0423,Aorta,661.5,False
+s0423,Inferior Vena Cava,661.5,False
+s0423,Portal and Splenic Veins,661.5,False
+s0423,Pancreas,661.5,False
+s0423,Right Adrenal Gland,661.5,False
+s0423,Left Adrenal Gland,661.5,False
+s0440,Spleen,633.0,False
+s0440,Right Kidney,633.0,False
+s0440,Left Kidney,633.0,False
+s0440,Gallbladder,633.0,False
+s0440,Esophagus,633.0,False
+s0440,Liver,633.0,False
+s0440,Stomach,633.0,False
+s0440,Aorta,633.0,False
+s0440,Inferior Vena Cava,633.0,False
+s0440,Portal and Splenic Veins,633.0,False
+s0440,Pancreas,633.0,False
+s0440,Right Adrenal Gland,633.0,False
+s0440,Left Adrenal Gland,633.0,False
+s0441,Spleen,454.5,False
+s0441,Right Kidney,454.5,False
+s0441,Left Kidney,454.5,False
+s0441,Gallbladder,454.5,False
+s0441,Esophagus,454.5,True
+s0441,Liver,454.5,False
+s0441,Stomach,454.5,False
+s0441,Aorta,454.5,True
+s0441,Inferior Vena Cava,454.5,False
+s0441,Portal and Splenic Veins,454.5,False
+s0441,Pancreas,454.5,False
+s0441,Right Adrenal Gland,454.5,False
+s0441,Left Adrenal Gland,454.5,False
+s0450,Spleen,357.0,True
+s0450,Right Kidney,357.0,False
+s0450,Left Kidney,357.0,False
+s0450,Gallbladder,357.0,False
+s0450,Esophagus,357.0,False
+s0450,Liver,357.0,True
+s0450,Stomach,357.0,True
+s0450,Aorta,357.0,True
+s0450,Inferior Vena Cava,357.0,True
+s0450,Portal and Splenic Veins,357.0,False
+s0450,Pancreas,357.0,False
+s0450,Right Adrenal Gland,357.0,False
+s0450,Left Adrenal Gland,357.0,False
+s0459,Spleen,468.0,True
+s0459,Right Kidney,468.0,True
+s0459,Left Kidney,468.0,True
+s0459,Gallbladder,468.0,True
+s0459,Esophagus,468.0,False
+s0459,Liver,468.0,True
+s0459,Stomach,468.0,True
+s0459,Aorta,468.0,True
+s0459,Inferior Vena Cava,468.0,True
+s0459,Portal and Splenic Veins,468.0,False
+s0459,Pancreas,468.0,True
+s0459,Right Adrenal Gland,468.0,False
+s0459,Left Adrenal Gland,468.0,False
+s0468,Spleen,1257.0,False
+s0468,Right Kidney,1257.0,False
+s0468,Left Kidney,1257.0,False
+s0468,Gallbladder,1257.0,False
+s0468,Esophagus,1257.0,True
+s0468,Liver,1257.0,False
+s0468,Stomach,1257.0,False
+s0468,Aorta,1257.0,False
+s0468,Inferior Vena Cava,1257.0,True
+s0468,Portal and Splenic Veins,1257.0,False
+s0468,Pancreas,1257.0,False
+s0468,Right Adrenal Gland,1257.0,False
+s0468,Left Adrenal Gland,1257.0,False
+s0470,Spleen,342.0,True
+s0470,Right Kidney,342.0,True
+s0470,Left Kidney,342.0,True
+s0470,Gallbladder,342.0,True
+s0470,Esophagus,342.0,False
+s0470,Liver,342.0,True
+s0470,Stomach,342.0,True
+s0470,Aorta,342.0,True
+s0470,Inferior Vena Cava,342.0,True
+s0470,Portal and Splenic Veins,342.0,False
+s0470,Pancreas,342.0,True
+s0470,Right Adrenal Gland,342.0,False
+s0470,Left Adrenal Gland,342.0,True
+s0482,Spleen,397.5,False
+s0482,Right Kidney,397.5,True
+s0482,Left Kidney,397.5,True
+s0482,Gallbladder,397.5,True
+s0482,Esophagus,397.5,False
+s0482,Liver,397.5,True
+s0482,Stomach,397.5,True
+s0482,Aorta,397.5,True
+s0482,Inferior Vena Cava,397.5,True
+s0482,Portal and Splenic Veins,397.5,False
+s0482,Pancreas,397.5,True
+s0482,Right Adrenal Gland,397.5,False
+s0482,Left Adrenal Gland,397.5,True
+s0499,Spleen,556.5,False
+s0499,Right Kidney,556.5,False
+s0499,Left Kidney,556.5,False
+s0499,Gallbladder,556.5,False
+s0499,Esophagus,556.5,False
+s0499,Liver,556.5,False
+s0499,Stomach,556.5,False
+s0499,Aorta,556.5,False
+s0499,Inferior Vena Cava,556.5,False
+s0499,Portal and Splenic Veins,556.5,False
+s0499,Pancreas,556.5,False
+s0499,Right Adrenal Gland,556.5,False
+s0499,Left Adrenal Gland,556.5,False
+s0505,Spleen,549.0,False
+s0505,Right Kidney,549.0,False
+s0505,Left Kidney,549.0,False
+s0505,Gallbladder,549.0,False
+s0505,Esophagus,549.0,True
+s0505,Liver,549.0,False
+s0505,Stomach,549.0,False
+s0505,Aorta,549.0,False
+s0505,Inferior Vena Cava,549.0,False
+s0505,Portal and Splenic Veins,549.0,False
+s0505,Pancreas,549.0,False
+s0505,Right Adrenal Gland,549.0,False
+s0505,Left Adrenal Gland,549.0,False
+s0543,Spleen,694.5,False
+s0543,Right Kidney,694.5,False
+s0543,Left Kidney,694.5,False
+s0543,Gallbladder,694.5,False
+s0543,Esophagus,694.5,False
+s0543,Liver,694.5,False
+s0543,Stomach,694.5,False
+s0543,Aorta,694.5,False
+s0543,Inferior Vena Cava,694.5,False
+s0543,Portal and Splenic Veins,694.5,False
+s0543,Pancreas,694.5,False
+s0543,Right Adrenal Gland,694.5,False
+s0543,Left Adrenal Gland,694.5,False
+s0561,Spleen,622.5,False
+s0561,Right Kidney,622.5,False
+s0561,Left Kidney,622.5,False
+s0561,Gallbladder,622.5,False
+s0561,Esophagus,622.5,False
+s0561,Liver,622.5,False
+s0561,Stomach,622.5,False
+s0561,Aorta,622.5,False
+s0561,Inferior Vena Cava,622.5,False
+s0561,Portal and Splenic Veins,622.5,False
+s0561,Pancreas,622.5,False
+s0561,Right Adrenal Gland,622.5,False
+s0561,Left Adrenal Gland,622.5,False
+s0667,Spleen,681.0,False
+s0667,Right Kidney,681.0,False
+s0667,Left Kidney,681.0,False
+s0667,Gallbladder,681.0,False
+s0667,Esophagus,681.0,False
+s0667,Liver,681.0,False
+s0667,Stomach,681.0,False
+s0667,Aorta,681.0,False
+s0667,Inferior Vena Cava,681.0,False
+s0667,Portal and Splenic Veins,681.0,False
+s0667,Pancreas,681.0,False
+s0667,Right Adrenal Gland,681.0,False
+s0667,Left Adrenal Gland,681.0,False
+s0673,Spleen,307.5,False
+s0673,Right Kidney,307.5,False
+s0673,Left Kidney,307.5,False
+s0673,Gallbladder,307.5,False
+s0673,Esophagus,307.5,False
+s0673,Liver,307.5,False
+s0673,Stomach,307.5,False
+s0673,Aorta,307.5,True
+s0673,Inferior Vena Cava,307.5,True
+s0673,Portal and Splenic Veins,307.5,False
+s0673,Pancreas,307.5,False
+s0673,Right Adrenal Gland,307.5,False
+s0673,Left Adrenal Gland,307.5,False
+s0684,Spleen,145.5,False
+s0684,Right Kidney,145.5,False
+s0684,Left Kidney,145.5,False
+s0684,Gallbladder,145.5,False
+s0684,Esophagus,145.5,True
+s0684,Liver,145.5,True
+s0684,Stomach,145.5,False
+s0684,Aorta,145.5,True
+s0684,Inferior Vena Cava,145.5,True
+s0684,Portal and Splenic Veins,145.5,False
+s0684,Pancreas,145.5,False
+s0684,Right Adrenal Gland,145.5,False
+s0684,Left Adrenal Gland,145.5,False
+s0687,Spleen,598.5,False
+s0687,Right Kidney,598.5,False
+s0687,Left Kidney,598.5,False
+s0687,Gallbladder,598.5,False
+s0687,Esophagus,598.5,False
+s0687,Liver,598.5,False
+s0687,Stomach,598.5,False
+s0687,Aorta,598.5,False
+s0687,Inferior Vena Cava,598.5,False
+s0687,Portal and Splenic Veins,598.5,False
+s0687,Pancreas,598.5,False
+s0687,Right Adrenal Gland,598.5,False
+s0687,Left Adrenal Gland,598.5,False
+s0735,Spleen,343.5,False
+s0735,Right Kidney,343.5,False
+s0735,Left Kidney,343.5,False
+s0735,Gallbladder,343.5,False
+s0735,Esophagus,343.5,False
+s0735,Liver,343.5,False
+s0735,Stomach,343.5,False
+s0735,Aorta,343.5,False
+s0735,Inferior Vena Cava,343.5,False
+s0735,Portal and Splenic Veins,343.5,False
+s0735,Pancreas,343.5,False
+s0735,Right Adrenal Gland,343.5,False
+s0735,Left Adrenal Gland,343.5,False
+s0753,Spleen,289.5,True
+s0753,Right Kidney,289.5,True
+s0753,Left Kidney,289.5,True
+s0753,Gallbladder,289.5,True
+s0753,Esophagus,289.5,False
+s0753,Liver,289.5,True
+s0753,Stomach,289.5,True
+s0753,Aorta,289.5,True
+s0753,Inferior Vena Cava,289.5,True
+s0753,Portal and Splenic Veins,289.5,True
+s0753,Pancreas,289.5,True
+s0753,Right Adrenal Gland,289.5,True
+s0753,Left Adrenal Gland,289.5,True
+s0802,Spleen,265.50002110004425,False
+s0802,Right Kidney,265.50002110004425,False
+s0802,Left Kidney,265.50002110004425,False
+s0802,Gallbladder,265.50002110004425,False
+s0802,Esophagus,265.50002110004425,False
+s0802,Liver,265.50002110004425,False
+s0802,Stomach,265.50002110004425,False
+s0802,Aorta,265.50002110004425,False
+s0802,Inferior Vena Cava,265.50002110004425,True
+s0802,Portal and Splenic Veins,265.50002110004425,True
+s0802,Pancreas,265.50002110004425,False
+s0802,Right Adrenal Gland,265.50002110004425,True
+s0802,Left Adrenal Gland,265.50002110004425,True
+s0829,Spleen,310.5,True
+s0829,Right Kidney,310.5,False
+s0829,Left Kidney,310.5,False
+s0829,Gallbladder,310.5,False
+s0829,Esophagus,310.5,False
+s0829,Liver,310.5,True
+s0829,Stomach,310.5,True
+s0829,Aorta,310.5,False
+s0829,Inferior Vena Cava,310.5,True
+s0829,Portal and Splenic Veins,310.5,True
+s0829,Pancreas,310.5,False
+s0829,Right Adrenal Gland,310.5,True
+s0829,Left Adrenal Gland,310.5,True
+s0907,Spleen,393.0,False
+s0907,Right Kidney,393.0,True
+s0907,Left Kidney,393.0,False
+s0907,Gallbladder,393.0,False
+s0907,Esophagus,393.0,False
+s0907,Liver,393.0,True
+s0907,Stomach,393.0,False
+s0907,Aorta,393.0,True
+s0907,Inferior Vena Cava,393.0,True
+s0907,Portal and Splenic Veins,393.0,False
+s0907,Pancreas,393.0,False
+s0907,Right Adrenal Gland,393.0,False
+s0907,Left Adrenal Gland,393.0,False
+s0923,Spleen,750.0,False
+s0923,Right Kidney,750.0,False
+s0923,Left Kidney,750.0,False
+s0923,Gallbladder,750.0,False
+s0923,Esophagus,750.0,False
+s0923,Liver,750.0,False
+s0923,Stomach,750.0,False
+s0923,Aorta,750.0,False
+s0923,Inferior Vena Cava,750.0,False
+s0923,Portal and Splenic Veins,750.0,False
+s0923,Pancreas,750.0,False
+s0923,Right Adrenal Gland,750.0,False
+s0923,Left Adrenal Gland,750.0,False
+s0933,Spleen,990.0,False
+s0933,Right Kidney,990.0,False
+s0933,Left Kidney,990.0,False
+s0933,Gallbladder,990.0,False
+s0933,Esophagus,990.0,False
+s0933,Liver,990.0,False
+s0933,Stomach,990.0,False
+s0933,Aorta,990.0,False
+s0933,Inferior Vena Cava,990.0,False
+s0933,Portal and Splenic Veins,990.0,False
+s0933,Pancreas,990.0,False
+s0933,Right Adrenal Gland,990.0,False
+s0933,Left Adrenal Gland,990.0,False
+s0951,Spleen,340.5,False
+s0951,Right Kidney,340.5,False
+s0951,Left Kidney,340.5,True
+s0951,Gallbladder,340.5,False
+s0951,Esophagus,340.5,False
+s0951,Liver,340.5,True
+s0951,Stomach,340.5,False
+s0951,Aorta,340.5,True
+s0951,Inferior Vena Cava,340.5,True
+s0951,Portal and Splenic Veins,340.5,False
+s0951,Pancreas,340.5,False
+s0951,Right Adrenal Gland,340.5,False
+s0951,Left Adrenal Gland,340.5,False
+s0994,Spleen,640.5,False
+s0994,Right Kidney,640.5,False
+s0994,Left Kidney,640.5,False
+s0994,Gallbladder,640.5,False
+s0994,Esophagus,640.5,False
+s0994,Liver,640.5,False
+s0994,Stomach,640.5,False
+s0994,Aorta,640.5,False
+s0994,Inferior Vena Cava,640.5,False
+s0994,Portal and Splenic Veins,640.5,False
+s0994,Pancreas,640.5,False
+s0994,Right Adrenal Gland,640.5,False
+s0994,Left Adrenal Gland,640.5,False
+s1051,Spleen,193.5,False
+s1051,Right Kidney,193.5,False
+s1051,Left Kidney,193.5,False
+s1051,Gallbladder,193.5,False
+s1051,Esophagus,193.5,True
+s1051,Liver,193.5,False
+s1051,Stomach,193.5,False
+s1051,Aorta,193.5,False
+s1051,Inferior Vena Cava,193.5,False
+s1051,Portal and Splenic Veins,193.5,False
+s1051,Pancreas,193.5,False
+s1051,Right Adrenal Gland,193.5,False
+s1051,Left Adrenal Gland,193.5,False
+s1053,Spleen,417.0,False
+s1053,Right Kidney,417.0,False
+s1053,Left Kidney,417.0,False
+s1053,Gallbladder,417.0,False
+s1053,Esophagus,417.0,False
+s1053,Liver,417.0,False
+s1053,Stomach,417.0,False
+s1053,Aorta,417.0,False
+s1053,Inferior Vena Cava,417.0,False
+s1053,Portal and Splenic Veins,417.0,False
+s1053,Pancreas,417.0,False
+s1053,Right Adrenal Gland,417.0,False
+s1053,Left Adrenal Gland,417.0,False
+s1057,Spleen,258.0,False
+s1057,Right Kidney,258.0,False
+s1057,Left Kidney,258.0,False
+s1057,Gallbladder,258.0,False
+s1057,Esophagus,258.0,False
+s1057,Liver,258.0,False
+s1057,Stomach,258.0,False
+s1057,Aorta,258.0,False
+s1057,Inferior Vena Cava,258.0,False
+s1057,Portal and Splenic Veins,258.0,False
+s1057,Pancreas,258.0,False
+s1057,Right Adrenal Gland,258.0,False
+s1057,Left Adrenal Gland,258.0,False
+s1075,Spleen,328.5,False
+s1075,Right Kidney,328.5,False
+s1075,Left Kidney,328.5,False
+s1075,Gallbladder,328.5,False
+s1075,Esophagus,328.5,True
+s1075,Liver,328.5,False
+s1075,Stomach,328.5,False
+s1075,Aorta,328.5,True
+s1075,Inferior Vena Cava,328.5,False
+s1075,Portal and Splenic Veins,328.5,False
+s1075,Pancreas,328.5,False
+s1075,Right Adrenal Gland,328.5,False
+s1075,Left Adrenal Gland,328.5,False
+s1094,Spleen,274.5,True
+s1094,Right Kidney,274.5,False
+s1094,Left Kidney,274.5,True
+s1094,Gallbladder,274.5,False
+s1094,Esophagus,274.5,False
+s1094,Liver,274.5,True
+s1094,Stomach,274.5,True
+s1094,Aorta,274.5,True
+s1094,Inferior Vena Cava,274.5,True
+s1094,Portal and Splenic Veins,274.5,True
+s1094,Pancreas,274.5,True
+s1094,Right Adrenal Gland,274.5,True
+s1094,Left Adrenal Gland,274.5,True
+s1096,Spleen,141.0,False
+s1096,Right Kidney,141.0,False
+s1096,Left Kidney,141.0,True
+s1096,Gallbladder,141.0,True
+s1096,Esophagus,141.0,False
+s1096,Liver,141.0,True
+s1096,Stomach,141.0,True
+s1096,Aorta,141.0,True
+s1096,Inferior Vena Cava,141.0,True
+s1096,Portal and Splenic Veins,141.0,True
+s1096,Pancreas,141.0,False
+s1096,Right Adrenal Gland,141.0,True
+s1096,Left Adrenal Gland,141.0,True
+s1112,Spleen,330.0,False
+s1112,Right Kidney,330.0,False
+s1112,Left Kidney,330.0,False
+s1112,Gallbladder,330.0,False
+s1112,Esophagus,330.0,True
+s1112,Liver,330.0,False
+s1112,Stomach,330.0,False
+s1112,Aorta,330.0,True
+s1112,Inferior Vena Cava,330.0,False
+s1112,Portal and Splenic Veins,330.0,False
+s1112,Pancreas,330.0,False
+s1112,Right Adrenal Gland,330.0,False
+s1112,Left Adrenal Gland,330.0,False
+s1119,Spleen,354.0,False
+s1119,Right Kidney,354.0,True
+s1119,Left Kidney,354.0,False
+s1119,Gallbladder,354.0,False
+s1119,Esophagus,354.0,True
+s1119,Liver,354.0,True
+s1119,Stomach,354.0,True
+s1119,Aorta,354.0,True
+s1119,Inferior Vena Cava,354.0,True
+s1119,Portal and Splenic Veins,354.0,True
+s1119,Pancreas,354.0,True
+s1119,Right Adrenal Gland,354.0,False
+s1119,Left Adrenal Gland,354.0,False
+s1121,Spleen,778.5,True
+s1121,Right Kidney,778.5,False
+s1121,Left Kidney,778.5,False
+s1121,Gallbladder,778.5,False
+s1121,Esophagus,778.5,False
+s1121,Liver,778.5,True
+s1121,Stomach,778.5,True
+s1121,Aorta,778.5,True
+s1121,Inferior Vena Cava,778.5,True
+s1121,Portal and Splenic Veins,778.5,False
+s1121,Pancreas,778.5,False
+s1121,Right Adrenal Gland,778.5,False
+s1121,Left Adrenal Gland,778.5,False
+s1152,Spleen,822.0,False
+s1152,Right Kidney,822.0,False
+s1152,Left Kidney,822.0,False
+s1152,Gallbladder,822.0,False
+s1152,Esophagus,822.0,False
+s1152,Liver,822.0,False
+s1152,Stomach,822.0,False
+s1152,Aorta,822.0,False
+s1152,Inferior Vena Cava,822.0,False
+s1152,Portal and Splenic Veins,822.0,False
+s1152,Pancreas,822.0,False
+s1152,Right Adrenal Gland,822.0,False
+s1152,Left Adrenal Gland,822.0,False
+s1174,Spleen,721.5,False
+s1174,Right Kidney,721.5,False
+s1174,Left Kidney,721.5,False
+s1174,Gallbladder,721.5,False
+s1174,Esophagus,721.5,False
+s1174,Liver,721.5,False
+s1174,Stomach,721.5,False
+s1174,Aorta,721.5,False
+s1174,Inferior Vena Cava,721.5,False
+s1174,Portal and Splenic Veins,721.5,False
+s1174,Pancreas,721.5,False
+s1174,Right Adrenal Gland,721.5,False
+s1174,Left Adrenal Gland,721.5,False
+s1176,Spleen,399.0,False
+s1176,Right Kidney,399.0,False
+s1176,Left Kidney,399.0,True
+s1176,Gallbladder,399.0,False
+s1176,Esophagus,399.0,False
+s1176,Liver,399.0,False
+s1176,Stomach,399.0,False
+s1176,Aorta,399.0,False
+s1176,Inferior Vena Cava,399.0,False
+s1176,Portal and Splenic Veins,399.0,False
+s1176,Pancreas,399.0,False
+s1176,Right Adrenal Gland,399.0,False
+s1176,Left Adrenal Gland,399.0,False
+s1184,Spleen,331.5,False
+s1184,Right Kidney,331.5,False
+s1184,Left Kidney,331.5,False
+s1184,Gallbladder,331.5,False
+s1184,Esophagus,331.5,True
+s1184,Liver,331.5,False
+s1184,Stomach,331.5,False
+s1184,Aorta,331.5,True
+s1184,Inferior Vena Cava,331.5,False
+s1184,Portal and Splenic Veins,331.5,False
+s1184,Pancreas,331.5,False
+s1184,Right Adrenal Gland,331.5,False
+s1184,Left Adrenal Gland,331.5,False
+s1192,Spleen,339.0,False
+s1192,Right Kidney,339.0,False
+s1192,Left Kidney,339.0,False
+s1192,Gallbladder,339.0,False
+s1192,Esophagus,339.0,True
+s1192,Liver,339.0,False
+s1192,Stomach,339.0,False
+s1192,Aorta,339.0,True
+s1192,Inferior Vena Cava,339.0,False
+s1192,Portal and Splenic Veins,339.0,False
+s1192,Pancreas,339.0,False
+s1192,Right Adrenal Gland,339.0,False
+s1192,Left Adrenal Gland,339.0,False
+s1195,Spleen,252.0,False
+s1195,Right Kidney,252.0,False
+s1195,Left Kidney,252.0,False
+s1195,Gallbladder,252.0,False
+s1195,Esophagus,252.0,True
+s1195,Liver,252.0,False
+s1195,Stomach,252.0,False
+s1195,Aorta,252.0,True
+s1195,Inferior Vena Cava,252.0,False
+s1195,Portal and Splenic Veins,252.0,False
+s1195,Pancreas,252.0,False
+s1195,Right Adrenal Gland,252.0,False
+s1195,Left Adrenal Gland,252.0,False
+s1212,Spleen,390.0,False
+s1212,Right Kidney,390.0,False
+s1212,Left Kidney,390.0,False
+s1212,Gallbladder,390.0,False
+s1212,Esophagus,390.0,True
+s1212,Liver,390.0,False
+s1212,Stomach,390.0,False
+s1212,Aorta,390.0,False
+s1212,Inferior Vena Cava,390.0,True
+s1212,Portal and Splenic Veins,390.0,False
+s1212,Pancreas,390.0,False
+s1212,Right Adrenal Gland,390.0,False
+s1212,Left Adrenal Gland,390.0,False
+s1240,Spleen,427.5,False
+s1240,Right Kidney,427.5,False
+s1240,Left Kidney,427.5,False
+s1240,Gallbladder,427.5,False
+s1240,Esophagus,427.5,False
+s1240,Liver,427.5,False
+s1240,Stomach,427.5,False
+s1240,Aorta,427.5,False
+s1240,Inferior Vena Cava,427.5,False
+s1240,Portal and Splenic Veins,427.5,False
+s1240,Pancreas,427.5,False
+s1240,Right Adrenal Gland,427.5,False
+s1240,Left Adrenal Gland,427.5,False
+s1248,Spleen,603.0,False
+s1248,Right Kidney,603.0,False
+s1248,Left Kidney,603.0,False
+s1248,Gallbladder,603.0,False
+s1248,Esophagus,603.0,False
+s1248,Liver,603.0,False
+s1248,Stomach,603.0,False
+s1248,Aorta,603.0,False
+s1248,Inferior Vena Cava,603.0,False
+s1248,Portal and Splenic Veins,603.0,False
+s1248,Pancreas,603.0,False
+s1248,Right Adrenal Gland,603.0,False
+s1248,Left Adrenal Gland,603.0,False
+s1249,Spleen,904.5,False
+s1249,Right Kidney,904.5,False
+s1249,Left Kidney,904.5,False
+s1249,Gallbladder,904.5,False
+s1249,Esophagus,904.5,False
+s1249,Liver,904.5,False
+s1249,Stomach,904.5,False
+s1249,Aorta,904.5,False
+s1249,Inferior Vena Cava,904.5,False
+s1249,Portal and Splenic Veins,904.5,False
+s1249,Pancreas,904.5,False
+s1249,Right Adrenal Gland,904.5,False
+s1249,Left Adrenal Gland,904.5,False
+s1276,Spleen,616.5,False
+s1276,Right Kidney,616.5,False
+s1276,Left Kidney,616.5,False
+s1276,Gallbladder,616.5,False
+s1276,Esophagus,616.5,False
+s1276,Liver,616.5,False
+s1276,Stomach,616.5,False
+s1276,Aorta,616.5,False
+s1276,Inferior Vena Cava,616.5,False
+s1276,Portal and Splenic Veins,616.5,False
+s1276,Pancreas,616.5,False
+s1276,Right Adrenal Gland,616.5,False
+s1276,Left Adrenal Gland,616.5,False
+s1322,Spleen,445.5,False
+s1322,Right Kidney,445.5,False
+s1322,Left Kidney,445.5,False
+s1322,Gallbladder,445.5,False
+s1322,Esophagus,445.5,True
+s1322,Liver,445.5,False
+s1322,Stomach,445.5,False
+s1322,Aorta,445.5,True
+s1322,Inferior Vena Cava,445.5,False
+s1322,Portal and Splenic Veins,445.5,False
+s1322,Pancreas,445.5,False
+s1322,Right Adrenal Gland,445.5,False
+s1322,Left Adrenal Gland,445.5,False
+s1323,Spleen,286.5,True
+s1323,Right Kidney,286.5,False
+s1323,Left Kidney,286.5,True
+s1323,Gallbladder,286.5,False
+s1323,Esophagus,286.5,False
+s1323,Liver,286.5,True
+s1323,Stomach,286.5,True
+s1323,Aorta,286.5,True
+s1323,Inferior Vena Cava,286.5,True
+s1323,Portal and Splenic Veins,286.5,True
+s1323,Pancreas,286.5,True
+s1323,Right Adrenal Gland,286.5,True
+s1323,Left Adrenal Gland,286.5,True
+s1347,Spleen,429.0,False
+s1347,Right Kidney,429.0,False
+s1347,Left Kidney,429.0,False
+s1347,Gallbladder,429.0,False
+s1347,Esophagus,429.0,False
+s1347,Liver,429.0,False
+s1347,Stomach,429.0,False
+s1347,Aorta,429.0,False
+s1347,Inferior Vena Cava,429.0,False
+s1347,Portal and Splenic Veins,429.0,False
+s1347,Pancreas,429.0,False
+s1347,Right Adrenal Gland,429.0,False
+s1347,Left Adrenal Gland,429.0,False
+s1355,Spleen,301.5,False
+s1355,Right Kidney,301.5,True
+s1355,Left Kidney,301.5,True
+s1355,Gallbladder,301.5,True
+s1355,Esophagus,301.5,False
+s1355,Liver,301.5,True
+s1355,Stomach,301.5,False
+s1355,Aorta,301.5,True
+s1355,Inferior Vena Cava,301.5,True
+s1355,Portal and Splenic Veins,301.5,False
+s1355,Pancreas,301.5,True
+s1355,Right Adrenal Gland,301.5,False
+s1355,Left Adrenal Gland,301.5,False
+s1357,Spleen,375.0,False
+s1357,Right Kidney,375.0,True
+s1357,Left Kidney,375.0,True
+s1357,Gallbladder,375.0,True
+s1357,Esophagus,375.0,False
+s1357,Liver,375.0,True
+s1357,Stomach,375.0,False
+s1357,Aorta,375.0,True
+s1357,Inferior Vena Cava,375.0,True
+s1357,Portal and Splenic Veins,375.0,False
+s1357,Pancreas,375.0,True
+s1357,Right Adrenal Gland,375.0,False
+s1357,Left Adrenal Gland,375.0,False
+s1377,Spleen,595.5,False
+s1377,Right Kidney,595.5,False
+s1377,Left Kidney,595.5,False
+s1377,Gallbladder,595.5,False
+s1377,Esophagus,595.5,True
+s1377,Liver,595.5,False
+s1377,Stomach,595.5,False
+s1377,Aorta,595.5,False
+s1377,Inferior Vena Cava,595.5,False
+s1377,Portal and Splenic Veins,595.5,False
+s1377,Pancreas,595.5,False
+s1377,Right Adrenal Gland,595.5,False
+s1377,Left Adrenal Gland,595.5,False
+s1386,Spleen,496.5,False
+s1386,Right Kidney,496.5,False
+s1386,Left Kidney,496.5,False
+s1386,Gallbladder,496.5,False
+s1386,Esophagus,496.5,True
+s1386,Liver,496.5,False
+s1386,Stomach,496.5,False
+s1386,Aorta,496.5,True
+s1386,Inferior Vena Cava,496.5,False
+s1386,Portal and Splenic Veins,496.5,False
+s1386,Pancreas,496.5,False
+s1386,Right Adrenal Gland,496.5,False
+s1386,Left Adrenal Gland,496.5,False
+s1436,Spleen,267.0,False
+s1436,Right Kidney,267.0,True
+s1436,Left Kidney,267.0,True
+s1436,Gallbladder,267.0,True
+s1436,Esophagus,267.0,False
+s1436,Liver,267.0,True
+s1436,Stomach,267.0,False
+s1436,Aorta,267.0,True
+s1436,Inferior Vena Cava,267.0,True
+s1436,Portal and Splenic Veins,267.0,False
+s1436,Pancreas,267.0,True
+s1436,Right Adrenal Gland,267.0,False
+s1436,Left Adrenal Gland,267.0,False
+s1446,Spleen,313.5,False
+s1446,Right Kidney,313.5,False
+s1446,Left Kidney,313.5,False
+s1446,Gallbladder,313.5,False
+s1446,Esophagus,313.5,True
+s1446,Liver,313.5,False
+s1446,Stomach,313.5,False
+s1446,Aorta,313.5,True
+s1446,Inferior Vena Cava,313.5,False
+s1446,Portal and Splenic Veins,313.5,False
+s1446,Pancreas,313.5,False
+s1446,Right Adrenal Gland,313.5,False
+s1446,Left Adrenal Gland,313.5,False
+s1455,Spleen,898.5,False
+s1455,Right Kidney,898.5,False
+s1455,Left Kidney,898.5,False
+s1455,Gallbladder,898.5,False
+s1455,Esophagus,898.5,False
+s1455,Liver,898.5,False
+s1455,Stomach,898.5,False
+s1455,Aorta,898.5,False
+s1455,Inferior Vena Cava,898.5,False
+s1455,Portal and Splenic Veins,898.5,False
+s1455,Pancreas,898.5,False
+s1455,Right Adrenal Gland,898.5,False
+s1455,Left Adrenal Gland,898.5,False
+s1458,Spleen,226.5,False
+s1458,Right Kidney,226.5,False
+s1458,Left Kidney,226.5,False
+s1458,Gallbladder,226.5,False
+s1458,Esophagus,226.5,True
+s1458,Liver,226.5,False
+s1458,Stomach,226.5,False
+s1458,Aorta,226.5,True
+s1458,Inferior Vena Cava,226.5,False
+s1458,Portal and Splenic Veins,226.5,False
+s1458,Pancreas,226.5,False
+s1458,Right Adrenal Gland,226.5,False
+s1458,Left Adrenal Gland,226.5,False
+s1463,Spleen,103.5,False
+s1463,Right Kidney,103.5,False
+s1463,Left Kidney,103.5,False
+s1463,Gallbladder,103.5,False
+s1463,Esophagus,103.5,False
+s1463,Liver,103.5,False
+s1463,Stomach,103.5,False
+s1463,Aorta,103.5,False
+s1463,Inferior Vena Cava,103.5,False
+s1463,Portal and Splenic Veins,103.5,False
+s1463,Pancreas,103.5,False
+s1463,Right Adrenal Gland,103.5,False
+s1463,Left Adrenal Gland,103.5,False
+s1504,Spleen,166.5,False
+s1504,Right Kidney,166.5,False
+s1504,Left Kidney,166.5,False
+s1504,Gallbladder,166.5,False
+s1504,Esophagus,166.5,False
+s1504,Liver,166.5,False
+s1504,Stomach,166.5,False
+s1504,Aorta,166.5,False
+s1504,Inferior Vena Cava,166.5,False
+s1504,Portal and Splenic Veins,166.5,False
+s1504,Pancreas,166.5,False
+s1504,Right Adrenal Gland,166.5,False
+s1504,Left Adrenal Gland,166.5,False
+s1531,Spleen,315.0,False
+s1531,Right Kidney,315.0,False
+s1531,Left Kidney,315.0,False
+s1531,Gallbladder,315.0,False
+s1531,Esophagus,315.0,False
+s1531,Liver,315.0,False
+s1531,Stomach,315.0,False
+s1531,Aorta,315.0,False
+s1531,Inferior Vena Cava,315.0,False
+s1531,Portal and Splenic Veins,315.0,False
+s1531,Pancreas,315.0,False
+s1531,Right Adrenal Gland,315.0,False
+s1531,Left Adrenal Gland,315.0,False
+s1541,Spleen,165.0,True
+s1541,Right Kidney,165.0,False
+s1541,Left Kidney,165.0,False
+s1541,Gallbladder,165.0,False
+s1541,Esophagus,165.0,False
+s1541,Liver,165.0,True
+s1541,Stomach,165.0,True
+s1541,Aorta,165.0,True
+s1541,Inferior Vena Cava,165.0,True
+s1541,Portal and Splenic Veins,165.0,False
+s1541,Pancreas,165.0,False
+s1541,Right Adrenal Gland,165.0,True
+s1541,Left Adrenal Gland,165.0,True
+s1542,Spleen,333.0,False
+s1542,Right Kidney,333.0,False
+s1542,Left Kidney,333.0,False
+s1542,Gallbladder,333.0,False
+s1542,Esophagus,333.0,False
+s1542,Liver,333.0,False
+s1542,Stomach,333.0,False
+s1542,Aorta,333.0,False
+s1542,Inferior Vena Cava,333.0,False
+s1542,Portal and Splenic Veins,333.0,False
+s1542,Pancreas,333.0,False
+s1542,Right Adrenal Gland,333.0,False
+s1542,Left Adrenal Gland,333.0,False
+s1551,Spleen,172.5,False
+s1551,Right Kidney,172.5,False
+s1551,Left Kidney,172.5,False
+s1551,Gallbladder,172.5,False
+s1551,Esophagus,172.5,False
+s1551,Liver,172.5,False
+s1551,Stomach,172.5,False
+s1551,Aorta,172.5,False
+s1551,Inferior Vena Cava,172.5,False
+s1551,Portal and Splenic Veins,172.5,False
+s1551,Pancreas,172.5,False
+s1551,Right Adrenal Gland,172.5,False
+s1551,Left Adrenal Gland,172.5,False
+s1564,Spleen,324.0,False
+s1564,Right Kidney,324.0,False
+s1564,Left Kidney,324.0,False
+s1564,Gallbladder,324.0,False
+s1564,Esophagus,324.0,True
+s1564,Liver,324.0,False
+s1564,Stomach,324.0,True
+s1564,Aorta,324.0,True
+s1564,Inferior Vena Cava,324.0,False
+s1564,Portal and Splenic Veins,324.0,False
+s1564,Pancreas,324.0,False
+s1564,Right Adrenal Gland,324.0,False
+s1564,Left Adrenal Gland,324.0,False
+s1573,Spleen,178.5,False
+s1573,Right Kidney,178.5,False
+s1573,Left Kidney,178.5,False
+s1573,Gallbladder,178.5,False
+s1573,Esophagus,178.5,False
+s1573,Liver,178.5,False
+s1573,Stomach,178.5,False
+s1573,Aorta,178.5,False
+s1573,Inferior Vena Cava,178.5,False
+s1573,Portal and Splenic Veins,178.5,False
+s1573,Pancreas,178.5,False
+s1573,Right Adrenal Gland,178.5,False
+s1573,Left Adrenal Gland,178.5,False
+s1593,Spleen,507.0,False
+s1593,Right Kidney,507.0,False
+s1593,Left Kidney,507.0,False
+s1593,Gallbladder,507.0,False
+s1593,Esophagus,507.0,False
+s1593,Liver,507.0,False
+s1593,Stomach,507.0,False
+s1593,Aorta,507.0,False
+s1593,Inferior Vena Cava,507.0,False
+s1593,Portal and Splenic Veins,507.0,False
+s1593,Pancreas,507.0,False
+s1593,Right Adrenal Gland,507.0,False
+s1593,Left Adrenal Gland,507.0,False
+s1626,Spleen,217.5,False
+s1626,Right Kidney,217.5,False
+s1626,Left Kidney,217.5,False
+s1626,Gallbladder,217.5,False
+s1626,Esophagus,217.5,False
+s1626,Liver,217.5,False
+s1626,Stomach,217.5,False
+s1626,Aorta,217.5,False
+s1626,Inferior Vena Cava,217.5,False
+s1626,Portal and Splenic Veins,217.5,False
+s1626,Pancreas,217.5,False
+s1626,Right Adrenal Gland,217.5,False
+s1626,Left Adrenal Gland,217.5,False
+s1631,Spleen,213.0,True
+s1631,Right Kidney,213.0,False
+s1631,Left Kidney,213.0,True
+s1631,Gallbladder,213.0,True
+s1631,Esophagus,213.0,False
+s1631,Liver,213.0,True
+s1631,Stomach,213.0,True
+s1631,Aorta,213.0,True
+s1631,Inferior Vena Cava,213.0,True
+s1631,Portal and Splenic Veins,213.0,False
+s1631,Pancreas,213.0,True
+s1631,Right Adrenal Gland,213.0,True
+s1631,Left Adrenal Gland,213.0,False
+s1641,Spleen,166.5,False
+s1641,Right Kidney,166.5,False
+s1641,Left Kidney,166.5,False
+s1641,Gallbladder,166.5,False
+s1641,Esophagus,166.5,False
+s1641,Liver,166.5,False
+s1641,Stomach,166.5,False
+s1641,Aorta,166.5,False
+s1641,Inferior Vena Cava,166.5,False
+s1641,Portal and Splenic Veins,166.5,False
+s1641,Pancreas,166.5,False
+s1641,Right Adrenal Gland,166.5,False
+s1641,Left Adrenal Gland,166.5,False
+s1725,Spleen,157.5,False
+s1725,Right Kidney,157.5,False
+s1725,Left Kidney,157.5,False
+s1725,Gallbladder,157.5,False
+s1725,Esophagus,157.5,False
+s1725,Liver,157.5,False
+s1725,Stomach,157.5,False
+s1725,Aorta,157.5,False
+s1725,Inferior Vena Cava,157.5,False
+s1725,Portal and Splenic Veins,157.5,False
+s1725,Pancreas,157.5,False
+s1725,Right Adrenal Gland,157.5,False
+s1725,Left Adrenal Gland,157.5,False
+s1728,Spleen,93.0,False
+s1728,Right Kidney,93.0,False
+s1728,Left Kidney,93.0,False
+s1728,Gallbladder,93.0,False
+s1728,Esophagus,93.0,True
+s1728,Liver,93.0,False
+s1728,Stomach,93.0,False
+s1728,Aorta,93.0,False
+s1728,Inferior Vena Cava,93.0,False
+s1728,Portal and Splenic Veins,93.0,False
+s1728,Pancreas,93.0,False
+s1728,Right Adrenal Gland,93.0,False
+s1728,Left Adrenal Gland,93.0,False
+s1736,Spleen,126.00001001358032,False
+s1736,Right Kidney,126.00001001358032,False
+s1736,Left Kidney,126.00001001358032,False
+s1736,Gallbladder,126.00001001358032,False
+s1736,Esophagus,126.00001001358032,False
+s1736,Liver,126.00001001358032,False
+s1736,Stomach,126.00001001358032,False
+s1736,Aorta,126.00001001358032,False
+s1736,Inferior Vena Cava,126.00001001358032,False
+s1736,Portal and Splenic Veins,126.00001001358032,False
+s1736,Pancreas,126.00001001358032,False
+s1736,Right Adrenal Gland,126.00001001358032,False
+s1736,Left Adrenal Gland,126.00001001358032,False
+s1762,Spleen,391.5,False
+s1762,Right Kidney,391.5,False
+s1762,Left Kidney,391.5,False
+s1762,Gallbladder,391.5,False
+s1762,Esophagus,391.5,False
+s1762,Liver,391.5,False
+s1762,Stomach,391.5,False
+s1762,Aorta,391.5,False
+s1762,Inferior Vena Cava,391.5,False
+s1762,Portal and Splenic Veins,391.5,False
+s1762,Pancreas,391.5,False
+s1762,Right Adrenal Gland,391.5,False
+s1762,Left Adrenal Gland,391.5,False
+s1773,Spleen,177.0,True
+s1773,Right Kidney,177.0,True
+s1773,Left Kidney,177.0,True
+s1773,Gallbladder,177.0,False
+s1773,Esophagus,177.0,False
+s1773,Liver,177.0,True
+s1773,Stomach,177.0,True
+s1773,Aorta,177.0,True
+s1773,Inferior Vena Cava,177.0,True
+s1773,Portal and Splenic Veins,177.0,False
+s1773,Pancreas,177.0,True
+s1773,Right Adrenal Gland,177.0,True
+s1773,Left Adrenal Gland,177.0,True
+s1775,Spleen,442.5,False
+s1775,Right Kidney,442.5,False
+s1775,Left Kidney,442.5,False
+s1775,Gallbladder,442.5,False
+s1775,Esophagus,442.5,True
+s1775,Liver,442.5,False
+s1775,Stomach,442.5,False
+s1775,Aorta,442.5,True
+s1775,Inferior Vena Cava,442.5,False
+s1775,Portal and Splenic Veins,442.5,False
+s1775,Pancreas,442.5,False
+s1775,Right Adrenal Gland,442.5,False
+s1775,Left Adrenal Gland,442.5,False
+s1785,Spleen,466.5,False
+s1785,Right Kidney,466.5,False
+s1785,Left Kidney,466.5,False
+s1785,Gallbladder,466.5,False
+s1785,Esophagus,466.5,True
+s1785,Liver,466.5,False
+s1785,Stomach,466.5,False
+s1785,Aorta,466.5,True
+s1785,Inferior Vena Cava,466.5,False
+s1785,Portal and Splenic Veins,466.5,False
+s1785,Pancreas,466.5,False
+s1785,Right Adrenal Gland,466.5,False
+s1785,Left Adrenal Gland,466.5,False
+s1806,Spleen,520.5,False
+s1806,Right Kidney,520.5,False
+s1806,Left Kidney,520.5,False
+s1806,Gallbladder,520.5,False
+s1806,Esophagus,520.5,True
+s1806,Liver,520.5,False
+s1806,Stomach,520.5,False
+s1806,Aorta,520.5,True
+s1806,Inferior Vena Cava,520.5,False
+s1806,Portal and Splenic Veins,520.5,False
+s1806,Pancreas,520.5,False
+s1806,Right Adrenal Gland,520.5,False
+s1806,Left Adrenal Gland,520.5,False
+s1827,Spleen,195.0,True
+s1827,Right Kidney,195.0,False
+s1827,Left Kidney,195.0,True
+s1827,Gallbladder,195.0,True
+s1827,Esophagus,195.0,False
+s1827,Liver,195.0,True
+s1827,Stomach,195.0,True
+s1827,Aorta,195.0,True
+s1827,Inferior Vena Cava,195.0,False
+s1827,Portal and Splenic Veins,195.0,False
+s1827,Pancreas,195.0,True
+s1827,Right Adrenal Gland,195.0,True
+s1827,Left Adrenal Gland,195.0,False
+s1834,Spleen,469.5,False
+s1834,Right Kidney,469.5,False
+s1834,Left Kidney,469.5,False
+s1834,Gallbladder,469.5,False
+s1834,Esophagus,469.5,True
+s1834,Liver,469.5,False
+s1834,Stomach,469.5,False
+s1834,Aorta,469.5,True
+s1834,Inferior Vena Cava,469.5,False
+s1834,Portal and Splenic Veins,469.5,False
+s1834,Pancreas,469.5,False
+s1834,Right Adrenal Gland,469.5,False
+s1834,Left Adrenal Gland,469.5,False
+s1854,Spleen,505.5,False
+s1854,Right Kidney,505.5,False
+s1854,Left Kidney,505.5,False
+s1854,Gallbladder,505.5,False
+s1854,Esophagus,505.5,True
+s1854,Liver,505.5,False
+s1854,Stomach,505.5,False
+s1854,Aorta,505.5,True
+s1854,Inferior Vena Cava,505.5,False
+s1854,Portal and Splenic Veins,505.5,False
+s1854,Pancreas,505.5,False
+s1854,Right Adrenal Gland,505.5,False
+s1854,Left Adrenal Gland,505.5,False
+s1932,Spleen,153.0,False
+s1932,Right Kidney,153.0,False
+s1932,Left Kidney,153.0,False
+s1932,Gallbladder,153.0,False
+s1932,Esophagus,153.0,False
+s1932,Liver,153.0,False
+s1932,Stomach,153.0,False
+s1932,Aorta,153.0,False
+s1932,Inferior Vena Cava,153.0,False
+s1932,Portal and Splenic Veins,153.0,False
+s1932,Pancreas,153.0,False
+s1932,Right Adrenal Gland,153.0,False
+s1932,Left Adrenal Gland,153.0,False
+s1933,Spleen,171.0,False
+s1933,Right Kidney,171.0,False
+s1933,Left Kidney,171.0,False
+s1933,Gallbladder,171.0,False
+s1933,Esophagus,171.0,False
+s1933,Liver,171.0,False
+s1933,Stomach,171.0,False
+s1933,Aorta,171.0,False
+s1933,Inferior Vena Cava,171.0,False
+s1933,Portal and Splenic Veins,171.0,False
+s1933,Pancreas,171.0,False
+s1933,Right Adrenal Gland,171.0,False
+s1933,Left Adrenal Gland,171.0,False
+s1943,Spleen,460.5,False
+s1943,Right Kidney,460.5,False
+s1943,Left Kidney,460.5,False
+s1943,Gallbladder,460.5,False
+s1943,Esophagus,460.5,True
+s1943,Liver,460.5,False
+s1943,Stomach,460.5,False
+s1943,Aorta,460.5,True
+s1943,Inferior Vena Cava,460.5,False
+s1943,Portal and Splenic Veins,460.5,False
+s1943,Pancreas,460.5,False
+s1943,Right Adrenal Gland,460.5,False
+s1943,Left Adrenal Gland,460.5,False
+s1951,Spleen,181.5,False
+s1951,Right Kidney,181.5,False
+s1951,Left Kidney,181.5,False
+s1951,Gallbladder,181.5,False
+s1951,Esophagus,181.5,False
+s1951,Liver,181.5,False
+s1951,Stomach,181.5,False
+s1951,Aorta,181.5,False
+s1951,Inferior Vena Cava,181.5,False
+s1951,Portal and Splenic Veins,181.5,False
+s1951,Pancreas,181.5,False
+s1951,Right Adrenal Gland,181.5,False
+s1951,Left Adrenal Gland,181.5,False
+s1997,Spleen,361.5,False
+s1997,Right Kidney,361.5,True
+s1997,Left Kidney,361.5,True
+s1997,Gallbladder,361.5,True
+s1997,Esophagus,361.5,False
+s1997,Liver,361.5,False
+s1997,Stomach,361.5,True
+s1997,Aorta,361.5,True
+s1997,Inferior Vena Cava,361.5,True
+s1997,Portal and Splenic Veins,361.5,False
+s1997,Pancreas,361.5,True
+s1997,Right Adrenal Gland,361.5,False
+s1997,Left Adrenal Gland,361.5,False
+s2016,Spleen,220.5,True
+s2016,Right Kidney,220.5,True
+s2016,Left Kidney,220.5,True
+s2016,Gallbladder,220.5,True
+s2016,Esophagus,220.5,False
+s2016,Liver,220.5,True
+s2016,Stomach,220.5,True
+s2016,Aorta,220.5,True
+s2016,Inferior Vena Cava,220.5,True
+s2016,Portal and Splenic Veins,220.5,False
+s2016,Pancreas,220.5,True
+s2016,Right Adrenal Gland,220.5,False
+s2016,Left Adrenal Gland,220.5,False
+s2036,Spleen,555.0,False
+s2036,Right Kidney,555.0,False
+s2036,Left Kidney,555.0,False
+s2036,Gallbladder,555.0,False
+s2036,Esophagus,555.0,True
+s2036,Liver,555.0,False
+s2036,Stomach,555.0,False
+s2036,Aorta,555.0,True
+s2036,Inferior Vena Cava,555.0,False
+s2036,Portal and Splenic Veins,555.0,False
+s2036,Pancreas,555.0,False
+s2036,Right Adrenal Gland,555.0,False
+s2036,Left Adrenal Gland,555.0,False
+s2040,Spleen,517.5,False
+s2040,Right Kidney,517.5,False
+s2040,Left Kidney,517.5,False
+s2040,Gallbladder,517.5,False
+s2040,Esophagus,517.5,True
+s2040,Liver,517.5,False
+s2040,Stomach,517.5,False
+s2040,Aorta,517.5,True
+s2040,Inferior Vena Cava,517.5,False
+s2040,Portal and Splenic Veins,517.5,False
+s2040,Pancreas,517.5,False
+s2040,Right Adrenal Gland,517.5,False
+s2040,Left Adrenal Gland,517.5,False
+s2048,Spleen,199.5,False
+s2048,Right Kidney,199.5,False
+s2048,Left Kidney,199.5,False
+s2048,Gallbladder,199.5,False
+s2048,Esophagus,199.5,True
+s2048,Liver,199.5,False
+s2048,Stomach,199.5,False
+s2048,Aorta,199.5,True
+s2048,Inferior Vena Cava,199.5,False
+s2048,Portal and Splenic Veins,199.5,False
+s2048,Pancreas,199.5,False
+s2048,Right Adrenal Gland,199.5,False
+s2048,Left Adrenal Gland,199.5,False
+s2060,Spleen,448.5,False
+s2060,Right Kidney,448.5,False
+s2060,Left Kidney,448.5,False
+s2060,Gallbladder,448.5,False
+s2060,Esophagus,448.5,True
+s2060,Liver,448.5,False
+s2060,Stomach,448.5,False
+s2060,Aorta,448.5,True
+s2060,Inferior Vena Cava,448.5,True
+s2060,Portal and Splenic Veins,448.5,False
+s2060,Pancreas,448.5,False
+s2060,Right Adrenal Gland,448.5,False
+s2060,Left Adrenal Gland,448.5,False
+s2073,Spleen,421.5,False
+s2073,Right Kidney,421.5,False
+s2073,Left Kidney,421.5,False
+s2073,Gallbladder,421.5,False
+s2073,Esophagus,421.5,True
+s2073,Liver,421.5,False
+s2073,Stomach,421.5,False
+s2073,Aorta,421.5,True
+s2073,Inferior Vena Cava,421.5,False
+s2073,Portal and Splenic Veins,421.5,False
+s2073,Pancreas,421.5,False
+s2073,Right Adrenal Gland,421.5,False
+s2073,Left Adrenal Gland,421.5,False
+s2081,Spleen,124.5,False
+s2081,Right Kidney,124.5,False
+s2081,Left Kidney,124.5,False
+s2081,Gallbladder,124.5,False
+s2081,Esophagus,124.5,True
+s2081,Liver,124.5,False
+s2081,Stomach,124.5,False
+s2081,Aorta,124.5,False
+s2081,Inferior Vena Cava,124.5,False
+s2081,Portal and Splenic Veins,124.5,False
+s2081,Pancreas,124.5,False
+s2081,Right Adrenal Gland,124.5,False
+s2081,Left Adrenal Gland,124.5,False
+s2119,Spleen,259.5,False
+s2119,Right Kidney,259.5,False
+s2119,Left Kidney,259.5,False
+s2119,Gallbladder,259.5,False
+s2119,Esophagus,259.5,True
+s2119,Liver,259.5,False
+s2119,Stomach,259.5,False
+s2119,Aorta,259.5,True
+s2119,Inferior Vena Cava,259.5,True
+s2119,Portal and Splenic Veins,259.5,False
+s2119,Pancreas,259.5,False
+s2119,Right Adrenal Gland,259.5,False
+s2119,Left Adrenal Gland,259.5,False
+s2123,Spleen,195.0,False
+s2123,Right Kidney,195.0,False
+s2123,Left Kidney,195.0,False
+s2123,Gallbladder,195.0,False
+s2123,Esophagus,195.0,True
+s2123,Liver,195.0,False
+s2123,Stomach,195.0,False
+s2123,Aorta,195.0,True
+s2123,Inferior Vena Cava,195.0,True
+s2123,Portal and Splenic Veins,195.0,False
+s2123,Pancreas,195.0,False
+s2123,Right Adrenal Gland,195.0,False
+s2123,Left Adrenal Gland,195.0,False
+s2133,Spleen,258.0,False
+s2133,Right Kidney,258.0,False
+s2133,Left Kidney,258.0,False
+s2133,Gallbladder,258.0,False
+s2133,Esophagus,258.0,True
+s2133,Liver,258.0,False
+s2133,Stomach,258.0,False
+s2133,Aorta,258.0,False
+s2133,Inferior Vena Cava,258.0,False
+s2133,Portal and Splenic Veins,258.0,False
+s2133,Pancreas,258.0,False
+s2133,Right Adrenal Gland,258.0,False
+s2133,Left Adrenal Gland,258.0,False
+s2137,Spleen,249.0,False
+s2137,Right Kidney,249.0,False
+s2137,Left Kidney,249.0,False
+s2137,Gallbladder,249.0,False
+s2137,Esophagus,249.0,True
+s2137,Liver,249.0,False
+s2137,Stomach,249.0,False
+s2137,Aorta,249.0,True
+s2137,Inferior Vena Cava,249.0,True
+s2137,Portal and Splenic Veins,249.0,False
+s2137,Pancreas,249.0,False
+s2137,Right Adrenal Gland,249.0,False
+s2137,Left Adrenal Gland,249.0,False
+s2139,Spleen,252.0,False
+s2139,Right Kidney,252.0,False
+s2139,Left Kidney,252.0,False
+s2139,Gallbladder,252.0,False
+s2139,Esophagus,252.0,False
+s2139,Liver,252.0,False
+s2139,Stomach,252.0,False
+s2139,Aorta,252.0,False
+s2139,Inferior Vena Cava,252.0,False
+s2139,Portal and Splenic Veins,252.0,False
+s2139,Pancreas,252.0,False
+s2139,Right Adrenal Gland,252.0,False
+s2139,Left Adrenal Gland,252.0,False
