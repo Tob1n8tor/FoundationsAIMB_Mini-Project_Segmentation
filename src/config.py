@@ -76,3 +76,30 @@ PREPROCESS_CONFIG = {
     "sw_batch_size": 4,  # Number of 3D windows processed in parallel
     "infer_overlap": 0.5,  # Default sliding window overlap in test.py (0.5 or 0.7)
 }
+
+# 6. Bonus task: out-of-distribution evaluation on the TotalSegmentator dataset (v300, test split)
+OOD_DIR = PROJECT_ROOT / "data" / "totalsegmentator_ood"
+OOD_DATASET_DIR = OOD_DIR / "Totalsegmentator_dataset_v300"  # <case>/ct.nii.gz, <case>/segmentations/*.nii.gz, meta.csv
+OOD_LABEL_DIR = OOD_DIR / "ts_btcv"  # <case>_label.nii.gz: 13 TS masks merged into BTCV label indices
+OOD_PRED_RAW_DIR = OOD_DIR / "pred_raw"  # <model>/<case>.nii.gz from the GPU step, in the 1.5x1.5x2 mm model grid
+OOD_CASE_LIST_DIR = OOD_DIR / "case_lists"  # abdominal.txt / non_abdominal.txt
+OOD_SURVEY_PATH = OOD_DIR / "survey.csv"  # per test case: shape, spacing, orientation, organ voxel counts, metadata
+
+# BTCV label index -> TotalSegmentator mask name (all 13 BTCV organs have a TS counterpart)
+TS_TO_BTCV = {
+    1: "spleen",
+    2: "kidney_right",
+    3: "kidney_left",
+    4: "gallbladder",
+    5: "esophagus",
+    6: "liver",
+    7: "stomach",
+    8: "aorta",
+    9: "inferior_vena_cava",
+    10: "portal_vein_and_splenic_vein",
+    11: "pancreas",
+    12: "adrenal_gland_right",
+    13: "adrenal_gland_left",
+}
+# A test scan counts as "abdominal" if all of these organs are (at least partly) in the field of view
+OOD_CORE_ORGANS = ["liver", "spleen", "kidney_right", "kidney_left", "pancreas", "stomach"]

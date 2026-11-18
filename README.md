@@ -38,8 +38,9 @@ docs/        Assignment description, report notes
 notebooks/   02_btcv_inference.ipynb    – Task 2: inference on BTCV
              03_quantitative_eval.ipynb – Task 3: Dice, HD95, HD, organ-wise results
              04_visual_inspection.ipynb – Task 4: good/poor case and typical errors
+             05_ood_eval.ipynb          – Bonus: OOD evaluation on TotalSegmentator
 src/         config, data loading, weight download, inference (Dice), evaluate (Hausdorff),
-             visualization (Task 4 plots)
+             visualization (Task 4 plots), ood_prepare / ood_infer / ood_eval (Bonus)
 results/     metrics/ (CSV results), figures/ (plots), predictions/ (git-ignored)
 ```
 
@@ -92,3 +93,27 @@ jupyter notebook notebooks/04_visual_inspection.ipynb
 ```
 
 Figures go to `results/figures/task4_*.png`.
+
+**Run the Bonus task (OOD):** pretrained Base / Small / Tiny, no fine-tuning, on the 109 scans of the
+TotalSegmentator dataset (`Totalsegmentator_dataset_v300`, 1,939 scans) test split, scored on the 13 BTCV organs.
+TotalSegmentator is not in this repo (large; CC BY 4.0). Expected layout (git-ignored):
+
+```
+data/totalsegmentator_ood/
+  Totalsegmentator_dataset_v300/  meta.csv + <case>/ct.nii.gz + <case>/segmentations/*.nii.gz (test cases suffice)
+  ts_btcv/                        <case>_label.nii.gz: 13 TS masks merged into BTCV label indices
+  survey.csv                      per test scan: shape, spacing, orientation, organ voxel counts, metadata
+  case_lists/                     abdominal.txt (67 scans with liver, spleen, kidneys, pancreas, stomach),
+                                  non_abdominal.txt (42: head, neck, chest-only, leg scans, ...)
+  pred_raw/<model>/<case>.nii.gz  GPU predictions in the 1.5 x 1.5 x 2.0 mm model grid
+  provenance/                     GPU logs, which GPU ran which case, fp32 vs TF32 check
+```
+
+1. `python -m src.ood_prepare` builds `ts_btcv/`, `survey.csv` and the case lists.
+2. `src/ood_infer.py` runs inference on a GPU (standalone, made for Colab; usage in its docstring). On a 2-vCPU
+   CPU runtime this is impractically slow; on an A100 it takes a few minutes for all 109 scans and 3 models.
+3. `python -m src.ood_eval` resamples the predictions to the label grid (`results/predictions/ood/`) and computes
+   Dice / HD95 / HD with the Task 2/3 functions (`results/metrics/ood_totalseg_<model>_overlap0.5.csv`).
+4. `jupyter notebook notebooks/05_ood_eval.ipynb`: tables (`results/metrics/ood_*.csv`) and figures
+   (`results/figures/ood_*.png`). The first run caches truncation flags and largest-component HD95
+   (~10 min on 8 cores).
