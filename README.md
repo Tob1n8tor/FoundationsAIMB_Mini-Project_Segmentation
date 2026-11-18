@@ -1,51 +1,78 @@
 # FoundationsAIMB_Mini-Project_Segmentation
 
-Mini-Project 1 (Segmentation) for **Foundations of AI in Biomedicine**.
+Mini-Project 1 (**Segmentation**) for *Foundations of AI in Biomedicine I* — Group B (Tobias Konieczny, Paula Maria Gal, Erik Stoklasa, Isabel Martínez Torres).
 
-## Project Goal
+## Overview
 
-Take a published segmentation model (Swin UNETR), run its pretrained weights on abdominal CT scans,
-and check whether we get the same results as the paper. No training needed.
+This repository contains our reproduction and analysis of **Swin UNETR** on the **Beyond the Cranial Vault (BTCV)** multi-organ abdominal CT segmentation benchmark (13 organs), using the official pretrained checkpoints without training.
 
-- **Paper:** Tang et al., [*Self-Supervised Pre-Training of Swin Transformers for 3D Medical Image Analysis*](https://openaccess.thecvf.com/content/CVPR2022/html/Tang_Self-Supervised_Pre-Training_of_Swin_Transformers_for_3D_Medical_Image_Analysis_CVPR_2022_paper.html), CVPR 2022 (Swin UNETR)
+- **Paper:** Tang et al., [*Self-Supervised Pre-Training of Swin Transformers for 3D Medical Image Analysis*](https://openaccess.thecvf.com/content/CVPR2022/html/Tang_Self-Supervised_Pre-Training_of_Swin_Transformers_for_3D_Medical_Image_Analysis_CVPR_2022_paper.html), CVPR 2022
 - **Official code:** [MONAI research-contributions – SwinUNETR/BTCV](https://github.com/Project-MONAI/research-contributions/tree/main/SwinUNETR/BTCV)
-- **Dataset:** Beyond the Cranial Vault (BTCV) multi-organ abdominal CT (13 organs)
+- **Dataset:** Beyond the Cranial Vault (BTCV) abdominal CT (24 training / 6 validation scans `img0035`–`img0040` from `swin_unetr_btcv_dataset_0.json`)
+- **Assignment sheet:** [`docs/AIM_1_Elite_P1.pdf`](docs/AIM_1_Elite_P1.pdf)
 
-## Tasks
+> **Bonus Task (Out-of-Distribution Evaluation):**  
+> The bonus task (evaluating the pretrained BTCV models without fine-tuning on the 109 test scans of **TotalSegmentator** v3) lives on the **`task-bonus`** branch. To inspect or run it:
+> ```bash
+> git checkout task-bonus
+> ```
 
-| Task | Points | Description |
+---
+
+## Tasks Covered (`main` branch)
+
+| Task | Description | Where in Repo |
 |---|---|---|
-| 1. Understand the Method | 15 | Explain the problem Swin UNETR solves, its main architectural components, how a Swin Transformer encoder differs from a CNN encoder, and why self-supervised pre-training helps 3D medical segmentation. |
-| 2. Reproduce BTCV Results | 30 | Run inference on BTCV with the pretrained **Swin UNETR Base, Small and Tiny** models. No training required. |
-| 3. Quantitative Evaluation | 25 | For each model, compute **Dice**, **Hausdorff distance** and **organ-wise performance**. Report overall and per-organ results and discuss them: best model, easiest/hardest organs, whether Dice and HD agree, plus one very good and one very bad example. |
-| 4. Qualitative Evaluation | 10 | Visualise a good case, a poor case and typical segmentation errors, and discuss possible causes of failure. |
-| 5. Reproducibility Analysis | 20 | Compare with the published results: how close they are, possible causes of differences (preprocessing, splits, software versions, inference settings, metrics) and how well the method is documented. |
-| Bonus: OOD Evaluation | 15 | Evaluate the pretrained model, without fine-tuning, on an out-of-distribution dataset (e.g. TotalSegmentator) using structures compatible with BTCV, and analyse robustness to the dataset shift. |
+| **Task 1** | Understand the Swin UNETR method, architecture, and self-supervised pre-training | Report |
+| **Task 2** | Reproduce BTCV segmentation inference with **Base**, **Small**, and **Tiny** checkpoints (`overlap = 0.5` & `0.7`) | [`notebooks/02_btcv_inference.ipynb`](notebooks/02_btcv_inference.ipynb), [`src/inference.py`](src/inference.py) |
+| **Task 3** | Quantitative evaluation: Dice score, HD95, max HD, organ-wise breakdown, and good/bad case selection | [`notebooks/03_quantitative_eval.ipynb`](notebooks/03_quantitative_eval.ipynb), [`src/evaluate.py`](src/evaluate.py) |
+| **Task 4** | Qualitative visual inspection: CT overlays, error maps, surgical clips, and failure mode analysis | [`notebooks/04_visual_inspection.ipynb`](notebooks/04_visual_inspection.ipynb), [`src/visualization.py`](src/visualization.py) |
+| **Task 5** | Reproducibility analysis: comparison with official numbers, library adaptations, and documentation gaps | Report & code adaptations in [`src/`](src/) |
+| **Bonus** | Out-of-distribution evaluation on TotalSegmentator (109 scans) | Branch **`task-bonus`** |
 
-## Report
+---
 
-- Submit as **PDF**. The first page lists all group members' names and matriculation numbers.
-- Structure it by Tasks 1–5, with the bonus task as an extra section.
-- Show understanding and critical analysis, not just a list of numbers.
-- **Due: Friday, 20.11.2026, 11:59 pm.**
+## Key Reproduced Results (BTCV Validation, 6 Scans)
 
-Full assignment: [`docs/AIM_1_Elite_P1.pdf`](docs/AIM_1_Elite_P1.pdf)
+| Model | Feature Size | Params | SSL Pre-trained | Official Dice (`0.5`) | Ours (`0.5`) | Official Dice (`0.7`) | Ours (`0.7`) | Median HD95 (`0.5`) |
+|---|---:|---:|:---:|---:|---:|---:|---:|---:|
+| **Swin UNETR / Base** | 48 | 62.1M | Yes | 81.86% | **81.37%** | 82.25% | **81.69%** | **6.4 mm** |
+| **Swin UNETR / Small** | 24 | 15.7M | No | 79.34% | 77.89% | 79.79% | 78.95% | 12.4 mm |
+| **Swin UNETR / Tiny** | 12 | 4.0M | No | 70.35% | 66.31% | 72.05% | 66.62% | 26.4 mm |
+
+---
 
 ## Repository Structure
 
-```
-docs/        Assignment description, report notes
-notebooks/   02_btcv_inference.ipynb    – Task 2: inference on BTCV
-             03_quantitative_eval.ipynb – Task 3: Dice, HD95, HD, organ-wise results
-             04_visual_inspection.ipynb – Task 4: good/poor case and typical errors
-src/         config, data loading, weight download, inference (Dice), evaluate (Hausdorff),
-             visualization (Task 4 plots)
-results/     metrics/ (CSV results), figures/ (plots), predictions/ (git-ignored)
+```text
+docs/
+  AIM_1_Elite_P1.pdf                 Assignment description
+  report_notes_task3.md              Working notes for Task 3 quantitative analysis
+notebooks/
+  02_btcv_inference.ipynb            Task 2: BTCV preprocessing, sliding-window inference, Dice
+  03_quantitative_eval.ipynb         Task 3: Dice, HD95, HD, organ-wise tables & plots
+  04_visual_inspection.ipynb         Task 4: Qualitative overlays, error maps, failure cases
+src/
+  config.py                          Paths, model configs, BTCV 13 organ labels, hyperparameters
+  data.py                            Official MONAI test transforms & dataset loader
+  download.py                        Automatic download of dataset_0.json and model checkpoints
+  inference.py                       Sliding-window inference, native-grid resampling, Dice
+  evaluate.py                        Dice, HD95, and max HD computation in native voxel space
+  visualization.py                   CT + mask overlays, error maps, and multi-panel figures
+results/
+  metrics/                           Exported CSVs (per-case, per-organ, and summary tables)
+  figures/                           Generated Task 3 and Task 4 plots
+  predictions/                       Predicted NIfTI masks (git-ignored)
+data/                                BTCV CT volumes and labels (git-ignored)
+checkpoints/                         Downloaded pretrained .pt weights (git-ignored)
+requirements.txt                     Python dependencies
 ```
 
-## Setup
+---
 
-Tested with Python 3.14.
+## Setup & Reproduction
+
+### 1. Environment
 
 ```bash
 python -m venv .venv
@@ -53,42 +80,36 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Data (manual):** BTCV is not in this repo because its license does not allow redistribution and the files are large.
+### 2. Data (Manual Download)
 
-1. Create a free account at [synapse.org](https://www.synapse.org) and join the
-   [BTCV challenge](https://www.synapse.org/#!Synapse:syn3193805).
-2. Download **`RawData.zip`** (Files → Abdomen).
-3. Unzip it and rename the folders:
+BTCV cannot be redistributed in this repository due to its license and file size:
 
-```
-data/btcv/imagesTr/   # from Training/img/
-data/btcv/labelsTr/   # from Training/label/
-```
+1. Create a free account at [synapse.org](https://www.synapse.org) and join the [BTCV challenge](https://www.synapse.org/#!Synapse:syn3193805).
+2. Download **`RawData.zip`** (*Files → Abdomen*).
+3. Unzip it and restructure the folders to match `dataset_0.json`:
+   ```text
+   data/btcv/imagesTr/   # from Training/img/
+   data/btcv/labelsTr/   # from Training/label/
+   ```
 
-**Weights (automatic):** the notebook downloads the Base, Small and Tiny checkpoints.
+The split file (`data/btcv/dataset_0.json`) and pretrained weights (`checkpoints/`) are downloaded automatically by the Task 2 notebook.
 
-**Run Task 2:**
+### 3. Run the Notebooks
 
-```bash
-jupyter notebook notebooks/02_btcv_inference.ipynb
-```
+1. **Task 2 – Inference:**
+   ```bash
+   jupyter notebook notebooks/02_btcv_inference.ipynb
+   ```
+   Set `INFER_OVERLAP` to `0.5` (official default, used in Tasks 3 & 4) or `0.7`. Saves predicted NIfTI masks to `results/predictions/` and per-case Dice CSVs to `results/metrics/`.
 
-On CPU this takes about 1.5 hours in total. Predicted masks are saved to `results/predictions/`.
-Set `INFER_OVERLAP` in the notebook to `0.5` (official default, used in Tasks 3 and 4) or `0.7`.
+2. **Task 3 – Quantitative Evaluation:**
+   ```bash
+   jupyter notebook notebooks/03_quantitative_eval.ipynb
+   ```
+   Requires BTCV data, `dataset_0.json`, and Task 2 predictions. Outputs `results/metrics/task3_*.csv` and `results/figures/task3_*.png`.
 
-**Run Task 3:** needs the BTCV data (see above), `data/btcv/dataset_0.json` (downloaded by the Task 2 notebook)
-and the Task 2 predictions (run Task 2 first, or get the `results/predictions/` folder from a teammate).
-
-```bash
-jupyter notebook notebooks/03_quantitative_eval.ipynb
-```
-
-Takes a few minutes. Results go to `results/metrics/task3_*.csv` and `results/figures/`.
-
-**Run Task 4:** needs the same inputs as Task 3 plus the Task 3 metric CSVs.
-
-```bash
-jupyter notebook notebooks/04_visual_inspection.ipynb
-```
-
-Figures go to `results/figures/task4_*.png`.
+3. **Task 4 – Qualitative Inspection:**
+   ```bash
+   jupyter notebook notebooks/04_visual_inspection.ipynb
+   ```
+   Requires the same inputs plus Task 3 metric CSVs. Outputs `results/figures/task4_*`.
