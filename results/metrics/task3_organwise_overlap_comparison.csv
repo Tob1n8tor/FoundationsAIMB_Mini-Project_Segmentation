@@ -1,5 +1,5 @@
 ,0.5,0.5,0.5,0.5,0.5,0.5,0.7,0.7,0.7,0.7,0.7,0.7
-,Dice,Dice,Dice,HD95 median,HD95 median,HD95 median,Dice,Dice,Dice,HD95 median,HD95 median,HD95 median
+,Dice [%],Dice [%],Dice [%],HD95 median [mm],HD95 median [mm],HD95 median [mm],Dice [%],Dice [%],Dice [%],HD95 median [mm],HD95 median [mm],HD95 median [mm]
 model,base,small,tiny,base,small,tiny,base,small,tiny,base,small,tiny
 organ,,,,,,,,,,,,
 Spleen,95.21239600536529,92.89924189298705,90.16166305123492,110.63535599258924,400.0505211887141,12.116833271520258,95.51898615135369,94.14876376279948,90.34581175258683,2.4362408212457662,211.73284437543592,6.54296875
