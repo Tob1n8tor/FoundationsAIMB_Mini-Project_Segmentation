@@ -3,89 +3,44 @@
 > **Task:** For each evaluated model, compute Dice score, Hausdorff distance and organ-wise performance.
 > Report both the overall performance and the performance for individual organs.
 
+All numbers below are printed by [`notebooks/03_quantitative_eval.ipynb`](../notebooks/03_quantitative_eval.ipynb),
+which follows the structure of the report. Metrics are computed by `src/evaluate.py`.
+
 ## Setup
-- 3 models (Tiny, Small, Base) × 6 validation scans (img0035–img0040) × 13 organs.
-- **Dice**: how much the prediction overlaps the true organ (1 = perfect, 0 = no overlap).
-- **HD**: the largest distance between the predicted and true outline, in mm (lower = better).
-- **HD95**: like HD, but ignores the worst 5% of points, so one stray voxel matters less. Standard in papers.
-  But if there are many stray fragments (more than 5% of the surface points), HD95 is affected too.
-- Organ missing from the scan (only the gallbladder in img0035): Dice counts as 0 in the overall mean, like the
-  official code, so we stay comparable with the official results. In the organ-wise table we only average scans
-  where the organ exists (gallbladder: 5 scans), otherwise the gallbladder Dice would drop from 0.77 to 0.64 just
-  because of this one scan. HD can't be computed, so it is left out of the HD averages.
+- 3 models (Tiny, Small, Base) × 6 validation scans (img0035–img0040) × 13 organs, overlap 0.5 and 0.7.
+- **Dice**: official `dice()`; reported in %.
+- **HD95**: 95th percentile of surface distances in each direction, then the larger one (MONAI convention), in mm.
+  **HD**: the same with the maximum instead of the 95th percentile.
+- **Aggregation**: mean over the 13 organs per scan, then over the 6 scans. HD95 median: over all organ–scan pairs.
+- **Absent organ** (gallbladder in img0035): Dice = 0 in the overall mean, as in the official code; excluded
+  in the organ-wise table. **Missed organ** (Tiny, right adrenal gland, 6 pairs): Dice 0, HD95 undefined.
 
-## Overall results
+## Overall results (Table 2)
 
-| Model | Dice [%] | Official Dice (README) [%] | HD95 median [mm] | HD95 mean [mm] | HD mean [mm] | Missed organs (of 78) |
+| Overlap | Model | Dice [%] | Official [%] | HD95 mean [mm] | HD95 median [mm] | Missed |
 |---|---|---|---|---|---|---|
-| Tiny | 66.31 | 70.35 | 26.4 | 104.7 | 252.8 | 6 |
-| Small | 77.89 | 79.34 | 12.4 | 111.9 | 273.4 | 0 |
-| Base | 81.37 | 81.86 | 6.4 | 43.6 | 198.1 | 0 |
+| 0.5 | Base | 81.37 | 81.86 | 44.0 | 6.4 | 0 |
+| 0.5 | Small | 77.89 | 79.34 | 112.8 | 12.4 | 0 |
+| 0.5 | Tiny | 66.31 | 70.35 | 104.5 | 26.4 | 6 |
+| 0.7 | Base | 81.69 | 82.25 | 8.3 | 5.0 | 0 |
+| 0.7 | Small | 78.95 | 79.79 | 58.6 | 9.0 | 0 |
+| 0.7 | Tiny | 66.62 | 72.05 | 52.7 | 17.4 | 6 |
 
-- We give the HD95 median as well as the mean, because a few huge values push the mean up.
-- HD is much bigger than HD95 because it reports the single worst point, often a small false spot far from the organ.
+File: `results/metrics/task3_overall_overlap_comparison.csv`
 
-## Organ results (Base model)
+## Key points
+- **Best model:** Base at both overlaps (Base > Small > Tiny in all 6 scans at 0.5, Wilcoxon p = 0.031).
+  Only Base is self-supervised pre-trained, so model size and pre-training cannot be separated.
+- **Organs:** easiest are liver, spleen, kidneys and aorta (large, high contrast); hardest are the adrenal glands,
+  esophagus, portal/splenic veins and gallbladder (small or thin). Table 3:
+  `results/metrics/task3_organwise_overlap_comparison.csv`.
+- **Examples (Table 4):** very good Base/img0039 (83.82 %), very bad Tiny/img0038 (60.18 %),
+  additional Base/img0035 (77.01 %, absent gallbladder).
+- **Dice vs. HD95:** same model ranking (Dice and median HD95), but different conclusions per organ.
+  Large HD95 values for well-segmented organs come from small distant fragments, mostly in air outside the patient.
+  Overlap 0.7 halves the fragments (Base: 617 → 306) and lowers Base's mean HD95 from 44.0 to 8.3 mm,
+  while Dice changes by only +0.3 points. Files: `task3_fragments_overlap_comparison.csv`,
+  `results/figures/task3_dice_vs_hd95.png`.
 
-| Organ | Dice | HD95 median [mm] |
-|---|---|---|
-| Liver | 0.96 | 124.2 |
-| Spleen | 0.95 | 110.6 |
-| Right Kidney | 0.93 | 2.9 |
-| Left Kidney | 0.93 | 4.4 |
-| Aorta | 0.90 | 5.0 |
-| Inferior Vena Cava | 0.83 | 15.7 |
-| Pancreas | 0.82 | 6.8 |
-| Stomach | 0.78 | 25.6 |
-| Gallbladder | 0.77 | 5.0 |
-| Portal and Splenic Veins | 0.76 | 11.3 |
-| Esophagus | 0.75 | 6.4 |
-| Right Adrenal Gland | 0.69 | 4.5 |
-| Left Adrenal Gland | 0.64 | 6.8 |
-
-All 3 models: `results/metrics/task3_organwise_overlap0.5.csv` and `results/figures/task3_organwise.png`.
-
----
-
-## Discussion
-
-### Which model configuration performs best overall?
-**Base.** It has the highest Dice (81.37%, only 0.5 points below the official result) and the lowest HD95 (6.4 mm median).
-The bigger the model, the better: Tiny < Small < Base. Tiny also misses organs completely
-(the right adrenal gland in all 6 scans), while Small and Base find every organ.
-
-### Are there substantial differences between organs?
-**Yes.** For Base, Dice ranges from 0.64 (left adrenal gland) to 0.96 (liver). For Tiny the gap is even
-bigger: 0.00 to 0.92. Large organs score high with every model. Small organs depend much more on model size.
-
-### Which organs are easiest and most difficult to segment?
-- **Easiest:** liver (0.96), spleen (0.95), kidneys (0.93). They are large, have a clear shape and good
-  contrast to the tissue around them.
-- **Hardest:** adrenal glands (0.64–0.69), esophagus (0.75), gallbladder (0.77). They are small or thin,
-  so they cover only a few voxels, and a one-voxel error at the edge already lowers Dice a lot. They also
-  have low contrast to nearby tissue, and their shape varies a lot between patients.
-
-### Do Dice score and Hausdorff distance lead to the same conclusions?
-**Across models, mostly.** Dice and the median HD95 both rank Base > Small > Tiny. The mean HD95, however,
-ranks Small (111.9 mm) below Tiny (104.7 mm), because Small produces more far-away fragments. The mean is
-dominated by a few extreme values, so we use the median for the ranking.
-**Per organ, not always.** The liver has the best Dice (0.96) but one of the worst HD95 values (124 mm).
-The kidneys have similar Dice but an HD95 of only about 3–4 mm.
-- Reason: the models sometimes predict small **false spots far away from the organ**. Such a spot is tiny,
-  so Dice barely changes, but HD measures the furthest point, so it becomes very large.
-- Dice tells us how much of the organ is covered, and HD tells us whether there are outline errors or stray spots.
-  We need both (see `results/figures/task3_dice_vs_hd95.png`).
-
-### Two examples: one very good, one very bad (average Dice and Hausdorff distance)
-
-| | Model / scan | Dice (mean) | HD95 mean [mm] | HD95 median [mm] | HD mean [mm] |
-|---|---|---|---|---|---|
-| Very good | Base / img0039 | 83.8% | 86.5 | 7.4 | 351.4 |
-| Very bad | Tiny / img0038 | 60.2% | 199.7 | 222.6 | 364.2 |
-
-- **Good case:** most organs are segmented well (HD95 median 7.4 mm). The HD95 mean is still high because
-  of a few organs with far-away false spots, so the mean alone looks worse than the case really is.
-- **Bad case:** low Dice, and even the median HD95 is over 200 mm. This is not because the organ outlines are
-  20 cm off: Tiny predicts many scattered fragments far from the organs (e.g. "liver" on pelvic muscles,
-  "stomach" in the air outside the body, see Task 4). Each fragment adds surface points far from the reference,
-  which drives HD95 up. Tiny also misses the right adrenal gland completely here.
+`task3_overall_overlap0.5.csv` and `task3_organwise_overlap0.5.csv` are older files kept for reference; the notebook
+no longer writes them.
